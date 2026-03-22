@@ -1,7 +1,9 @@
 #understadn all the type of dataset
 #train model
 #Do Gee
-import torch
 from ultralytics import YOLO
 
-det = YOLO('yolov8s')
+# Load a model
+model = YOLO("yolo26n.pt")
+
+# # Train the model
