@@ -1,0 +1,2 @@
+numpy==1.26.4
+patchify==0.2.3
