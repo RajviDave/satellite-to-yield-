@@ -14,4 +14,5 @@ import torch
 # path = kagglehub.dataset_download("hassanmojab/xview-dataset")
 
 weights=torch.load('yolo26n.pt',weights_only=False)
-print(weights.keys())
+
+print(weights['train_results'])
