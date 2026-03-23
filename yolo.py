@@ -15,4 +15,4 @@ import torch
 
 weights=torch.load('yolo26n.pt',weights_only=False)
 
-print(weights['train_results'])
+print(weights['train_results '])
