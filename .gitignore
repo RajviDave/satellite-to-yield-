@@ -4,3 +4,4 @@ __pycache__/
 archive/
 patches/
 filtered_images/
+labels/
