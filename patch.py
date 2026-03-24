@@ -4,7 +4,7 @@ from patchify import patchify
 import numpy as np
 
 # Input & Output folders
-input_folder = "archive/DOTA/test/images"
+input_folder = "archive/DOTA/val/images"
 output_folder = "patches"
 
 os.makedirs(output_folder, exist_ok=True)
@@ -21,6 +21,9 @@ for img_name in os.listdir(input_folder):
         continue
 
     h, w, c = image.shape
+
+    if h < 640 or w < 640:
+        continue
 
     # Make dimensions divisible by 640
     new_h = (h // patch_size) * patch_size
